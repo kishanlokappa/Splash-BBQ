@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
+  text-align: center;
   color: #404040;
 }
 
@@ -13,28 +14,91 @@ h1 {
   font-size: 2.25rem;
   font-weight: 300;
   color: #fff;
+  margin: 2em 0;
 }
 
 h2 {
   font-size: 1.3125rem;
+  margin: 0;
 }
 
 strong {
   font-weight: 900;
 }
 
-.intro {
-  background: url(./jon-tyson-kctt4tL1dkE-unsplash.jpg);
+h1 + p {
+  color: #f19119;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.3125rem;
+  margin: 0;
 }
 
-.intro p {
-  color: #f18119;
+.top-text {
+  color: #f19119;
+  font-size: 0.625rem;
+  font-weight: 900;
 }
 
-.main-content-body {
-  color: #404040;
+h2 + p {
+  color: #f19119;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 0;
+}
+
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
 }
 
 /*
-    Layout
+    Layout:    Intro section
 */
+
+.intro {
+  background: url(./jon-tyson-kctt4tL1dkE-unsplash.jpg);
+  background-color: #404040;
+  background-size: cover;
+  background-position: center;
+  padding: 0 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-text {
+  order: -1;
+}
+
+/* =================
+   main-content section 
+   ================= */
+
+.main-content {
+  padding: 2em 1em;
+}
+
+/* =================
+   MEDIA QUERY 
+   ================= */
+
+@media (min-width: 500px) {
+  body {
+    display: flex;
+    font-size: 1.125rem;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
+}
