@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  color: #404040;
+}
+
+/* 
+    typography 
+*/
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.3125rem;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.intro {
+  background: url(./jon-tyson-kctt4tL1dkE-unsplash.jpg);
+}
+
+.intro p {
+  color: #f18119;
+}
+
+.main-content-body {
+  color: #404040;
+}
+
+/*
+    Layout
+*/
