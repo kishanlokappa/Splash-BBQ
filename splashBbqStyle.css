@@ -69,6 +69,15 @@ strong {
   background-color: #404040;
   background-position: center;
   padding: 0 0.5em 2em;
+}
+
+.container {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-intro {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,13 +90,6 @@ strong {
 
 .main-content {
   padding: 2em 1em;
-}
-
-.intro > *,
-.main-content > * {
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* =================
@@ -119,5 +121,9 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .container-intro {
+    height: 100%;
   }
 }
