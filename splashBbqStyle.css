@@ -49,6 +49,10 @@ h2 + p {
   font-weight: 900;
   text-transform: uppercase;
   order: -1;
+  border-top: 5px solid #f18119;
+  margin: 0;
+  padding-top: 2px;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 
 .fine-print {
@@ -68,6 +72,7 @@ strong {
   background-image: url(jon-tyson-kctt4tL1dkE-unsplash.jpg);
   background-size: cover;
   background-color: #404040;
+  background-blend-mode: multiply;
   background-position: center;
   padding: 0 0.5em 2em;
   display: flex;
